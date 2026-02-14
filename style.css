@@ -1,0 +1,78 @@
+body {
+    box-sizing: border-box;  
+    background-image: url('/photo/image.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Playfair Display;
+}
+
+.valentine-box {
+    background-color: #fcdee2;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valentine-box img {
+    height: 150px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #d25dab;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 10px;
+    
+}
+.button-yes {
+    font-weight: bold;
+    background-color: #df2733;
+    border: none;
+    border-radius: 20px;
+    color:  #f7e9ea;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 10px 2px rgba(80, 34, 75, 0.156);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-yes.active {
+    transform: scale(1.3);
+    box-shadow: 0px 8px 20px 4px rgba(80, 34, 75, 0.25);
+}
+
+.button-no {
+    font-weight: bold;
+    background-color: #c1c0c0;
+    border: none;
+    border-radius: 20px;
+    color:  #2d2c2c;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 10px 2px rgba(80, 34, 75, 0.156);
+    cursor: pointer;
+
+    transition: 0.15s;
+    /* right: 550px;
+    display: inline-block;     
+    position: absolute;   /* важно для "убегания" */
+}
+.tricky-text {
+    font-size: 10px;
+    color: gray;
+}
+
+.gif {
+    display: none;
+    width: 220px; /* можешь поменять размер */
+}
